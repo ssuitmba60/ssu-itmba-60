@@ -1,303 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./style.css"/>
+<meta charset="UTF-8">
+<title>Photo Gallery</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"/>
+
+<style>
+
+body{
+    margin:0;
+    background:#111;
+}
+
+.photo{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap:10px;
+    padding:20px;
+}
+
+.photo img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.photo img:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
 </head>
 <body>
 
+<div id="gallery" class="photo">
 
 
-<div class="photo">
 
-<img src="./2026-sebu/DJI_20260227060328_0001_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060340_0001_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060809_0004_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060819_0005_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060820_0006_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060823_0007_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227060825_0008_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227061024_0009_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227063957_0011_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227064001_0012_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227064004_0013_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227064009_0014_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227064205_0016_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227065421_0017_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227065423_0018_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227065605_0019_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227070147_0020_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081011_0024_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081013_0025_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081015_0026_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081017_0027_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081018_0028_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081020_0029_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081021_0030_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081023_0031_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081026_0032_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081027_0033_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081029_0034_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081037_0035_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081039_0036_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081040_0037_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081041_0038_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081042_0039_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081044_0040_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081046_0041_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081048_0042_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081127_0043_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081130_0044_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081141_0045_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227081145_0046_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227082149_0052_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227082151_0053_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227082158_0054_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227082541_0057_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227104411_0059_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227104415_0060_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227104420_0061_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227111428_0032_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227114234_0063_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227114236_0064_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227114238_0065_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121255_0047_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121256_0048_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121258_0049_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121300_0050_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121310_0051_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121312_0052_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121313_0053_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121316_0054_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121318_0055_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121327_0056_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121329_0057_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121331_0058_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121340_0059_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121342_0060_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121343_0061_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121349_0062_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121350_0063_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121353_0064_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121354_0065_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121359_0066_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121402_0067_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121409_0068_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121410_0069_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121412_0070_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121420_0071_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121421_0072_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121423_0073_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121425_0074_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121557_0077_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121558_0078_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121558_0079_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121559_0080_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121601_0081_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121603_0082_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121604_0083_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121605_0084_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121606_0085_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121607_0086_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121614_0076_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121615_0077_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121616_0078_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121617_0079_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121618_0080_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121619_0081_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121620_0082_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121620_0083_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121621_0084_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121622_0085_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121622_0086_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121623_0087_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227121624_0088_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122639_0092_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122643_0093_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122647_0094_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122650_0095_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122702_0096_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122705_0097_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227122708_0098_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123124_0099_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123126_0100_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123127_0101_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123128_0102_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123140_0103_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123143_0104_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123143_0105_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123144_0106_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123154_0107_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123156_0108_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123157_0109_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123159_0110_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123201_0111_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123211_0112_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123213_0113_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123214_0114_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123215_0115_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123216_0116_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123229_0117_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123230_0118_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123232_0119_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123236_0120_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123237_0121_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123238_0122_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123241_0123_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123242_0124_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123243_0125_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123244_0126_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123446_0095_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123448_0096_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123452_0097_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123454_0098_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123503_0128_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123505_0129_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123506_0130_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123507_0131_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123636_0099_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123706_0100_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123739_0101_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123934_0104_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123936_0105_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227123939_0106_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227124024_0107_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227124116_0109_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227124130_0110_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227124146_0111_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130037_0142_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130045_0119_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130046_0143_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130049_0120_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130053_0121_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130057_0122_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130102_0144_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130103_0145_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130105_0146_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130106_0147_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130107_0148_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130108_0149_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130109_0150_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130110_0151_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130115_0152_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130123_0153_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130126_0154_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227130340_0155_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227133652_0123_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227133859_0125_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227133906_0126_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227134109_0128_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227134111_0129_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227134113_0130_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227134156_0131_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227134414_0159_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135124_0134_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135132_0135_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135136_0136_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135137_0137_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135138_0138_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135139_0139_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135139_0140_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135141_0141_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135315_0162_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135317_0143_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135318_0163_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135320_0144_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135323_0145_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135340_0146_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135342_0147_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135348_0148_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135357_0164_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135459_0166_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135503_0167_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135843_0150_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135912_0169_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135914_0170_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135926_0171_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227135927_0172_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140342_0180_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140344_0181_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140619_0182_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140835_0184_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140935_0185_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140939_0186_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140944_0187_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140950_0188_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140956_0189_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227140959_0190_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141002_0191_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141005_0192_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141150_0194_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141151_0195_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141152_0196_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141205_0197_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141206_0198_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141207_0199_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141208_0200_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141209_0201_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141210_0202_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227141211_0203_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142318_0159_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142319_0160_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142320_0161_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142322_0162_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142336_0163_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142337_0164_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142339_0165_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142340_0166_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142342_0167_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142346_0168_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142356_0169_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142357_0170_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142359_0171_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142400_0172_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142403_0173_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142407_0174_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142427_0208_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142429_0209_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142436_0175_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142438_0176_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142439_0177_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142444_0178_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142448_0179_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142506_0180_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142508_0181_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142510_0182_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142512_0183_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142518_0184_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142520_0185_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142521_0186_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142522_0187_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142523_0188_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142533_0189_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142535_0190_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142536_0191_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142537_0192_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142538_0193_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142542_0194_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142546_0195_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142603_0196_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142605_0197_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142606_0198_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142608_0199_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142609_0200_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142611_0201_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142613_0202_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142615_0203_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227142616_0204_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143802_0212_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143804_0213_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143806_0214_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143824_0215_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143831_0216_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143838_0217_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143847_0218_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143852_0219_D.JPG"/>
-<img src="./2026-sebu/DJI_20260227143854_0220_D.JPG"/>
 
+<a href="./2026-sebu/DJI_20260227060328_0001_D.JPG"><img src="./2026-sebu/DJI_20260227060328_0001_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060340_0001_D.JPG"><img src="./2026-sebu/DJI_20260227060340_0001_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060809_0004_D.JPG"><img src="./2026-sebu/DJI_20260227060809_0004_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060819_0005_D.JPG"><img src="./2026-sebu/DJI_20260227060819_0005_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060820_0006_D.JPG"><img src="./2026-sebu/DJI_20260227060820_0006_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060823_0007_D.JPG"><img src="./2026-sebu/DJI_20260227060823_0007_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227060825_0008_D.JPG"><img src="./2026-sebu/DJI_20260227060825_0008_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227061024_0009_D.JPG"><img src="./2026-sebu/DJI_20260227061024_0009_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227063957_0011_D.JPG"><img src="./2026-sebu/DJI_20260227063957_0011_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227064001_0012_D.JPG"><img src="./2026-sebu/DJI_20260227064001_0012_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227064004_0013_D.JPG"><img src="./2026-sebu/DJI_20260227064004_0013_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227064009_0014_D.JPG"><img src="./2026-sebu/DJI_20260227064009_0014_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227064205_0016_D.JPG"><img src="./2026-sebu/DJI_20260227064205_0016_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227065421_0017_D.JPG"><img src="./2026-sebu/DJI_20260227065421_0017_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227065423_0018_D.JPG"><img src="./2026-sebu/DJI_20260227065423_0018_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227065605_0019_D.JPG"><img src="./2026-sebu/DJI_20260227065605_0019_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227070147_0020_D.JPG"><img src="./2026-sebu/DJI_20260227070147_0020_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081011_0024_D.JPG"><img src="./2026-sebu/DJI_20260227081011_0024_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081013_0025_D.JPG"><img src="./2026-sebu/DJI_20260227081013_0025_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081015_0026_D.JPG"><img src="./2026-sebu/DJI_20260227081015_0026_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081017_0027_D.JPG"><img src="./2026-sebu/DJI_20260227081017_0027_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081018_0028_D.JPG"><img src="./2026-sebu/DJI_20260227081018_0028_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081020_0029_D.JPG"><img src="./2026-sebu/DJI_20260227081020_0029_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081021_0030_D.JPG"><img src="./2026-sebu/DJI_20260227081021_0030_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081023_0031_D.JPG"><img src="./2026-sebu/DJI_20260227081023_0031_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081026_0032_D.JPG"><img src="./2026-sebu/DJI_20260227081026_0032_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081027_0033_D.JPG"><img src="./2026-sebu/DJI_20260227081027_0033_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081029_0034_D.JPG"><img src="./2026-sebu/DJI_20260227081029_0034_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081037_0035_D.JPG"><img src="./2026-sebu/DJI_20260227081037_0035_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081039_0036_D.JPG"><img src="./2026-sebu/DJI_20260227081039_0036_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081040_0037_D.JPG"><img src="./2026-sebu/DJI_20260227081040_0037_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081041_0038_D.JPG"><img src="./2026-sebu/DJI_20260227081041_0038_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081042_0039_D.JPG"><img src="./2026-sebu/DJI_20260227081042_0039_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081044_0040_D.JPG"><img src="./2026-sebu/DJI_20260227081044_0040_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081046_0041_D.JPG"><img src="./2026-sebu/DJI_20260227081046_0041_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081048_0042_D.JPG"><img src="./2026-sebu/DJI_20260227081048_0042_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081127_0043_D.JPG"><img src="./2026-sebu/DJI_20260227081127_0043_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081130_0044_D.JPG"><img src="./2026-sebu/DJI_20260227081130_0044_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081141_0045_D.JPG"><img src="./2026-sebu/DJI_20260227081141_0045_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227081145_0046_D.JPG"><img src="./2026-sebu/DJI_20260227081145_0046_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227082149_0052_D.JPG"><img src="./2026-sebu/DJI_20260227082149_0052_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227082151_0053_D.JPG"><img src="./2026-sebu/DJI_20260227082151_0053_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227082158_0054_D.JPG"><img src="./2026-sebu/DJI_20260227082158_0054_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227082541_0057_D.JPG"><img src="./2026-sebu/DJI_20260227082541_0057_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227104411_0059_D.JPG"><img src="./2026-sebu/DJI_20260227104411_0059_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227104415_0060_D.JPG"><img src="./2026-sebu/DJI_20260227104415_0060_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227104420_0061_D.JPG"><img src="./2026-sebu/DJI_20260227104420_0061_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227111428_0032_D.JPG"><img src="./2026-sebu/DJI_20260227111428_0032_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227114234_0063_D.JPG"><img src="./2026-sebu/DJI_20260227114234_0063_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227114236_0064_D.JPG"><img src="./2026-sebu/DJI_20260227114236_0064_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227114238_0065_D.JPG"><img src="./2026-sebu/DJI_20260227114238_0065_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121255_0047_D.JPG"><img src="./2026-sebu/DJI_20260227121255_0047_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121256_0048_D.JPG"><img src="./2026-sebu/DJI_20260227121256_0048_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121258_0049_D.JPG"><img src="./2026-sebu/DJI_20260227121258_0049_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121300_0050_D.JPG"><img src="./2026-sebu/DJI_20260227121300_0050_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121310_0051_D.JPG"><img src="./2026-sebu/DJI_20260227121310_0051_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121312_0052_D.JPG"><img src="./2026-sebu/DJI_20260227121312_0052_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121313_0053_D.JPG"><img src="./2026-sebu/DJI_20260227121313_0053_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121316_0054_D.JPG"><img src="./2026-sebu/DJI_20260227121316_0054_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121318_0055_D.JPG"><img src="./2026-sebu/DJI_20260227121318_0055_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121327_0056_D.JPG"><img src="./2026-sebu/DJI_20260227121327_0056_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121329_0057_D.JPG"><img src="./2026-sebu/DJI_20260227121329_0057_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121331_0058_D.JPG"><img src="./2026-sebu/DJI_20260227121331_0058_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121340_0059_D.JPG"><img src="./2026-sebu/DJI_20260227121340_0059_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121342_0060_D.JPG"><img src="./2026-sebu/DJI_20260227121342_0060_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121343_0061_D.JPG"><img src="./2026-sebu/DJI_20260227121343_0061_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121349_0062_D.JPG"><img src="./2026-sebu/DJI_20260227121349_0062_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121350_0063_D.JPG"><img src="./2026-sebu/DJI_20260227121350_0063_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121353_0064_D.JPG"><img src="./2026-sebu/DJI_20260227121353_0064_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121354_0065_D.JPG"><img src="./2026-sebu/DJI_20260227121354_0065_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121359_0066_D.JPG"><img src="./2026-sebu/DJI_20260227121359_0066_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121402_0067_D.JPG"><img src="./2026-sebu/DJI_20260227121402_0067_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121409_0068_D.JPG"><img src="./2026-sebu/DJI_20260227121409_0068_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121410_0069_D.JPG"><img src="./2026-sebu/DJI_20260227121410_0069_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121412_0070_D.JPG"><img src="./2026-sebu/DJI_20260227121412_0070_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121420_0071_D.JPG"><img src="./2026-sebu/DJI_20260227121420_0071_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121421_0072_D.JPG"><img src="./2026-sebu/DJI_20260227121421_0072_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121423_0073_D.JPG"><img src="./2026-sebu/DJI_20260227121423_0073_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121425_0074_D.JPG"><img src="./2026-sebu/DJI_20260227121425_0074_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121557_0077_D.JPG"><img src="./2026-sebu/DJI_20260227121557_0077_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121558_0078_D.JPG"><img src="./2026-sebu/DJI_20260227121558_0078_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121558_0079_D.JPG"><img src="./2026-sebu/DJI_20260227121558_0079_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121559_0080_D.JPG"><img src="./2026-sebu/DJI_20260227121559_0080_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121601_0081_D.JPG"><img src="./2026-sebu/DJI_20260227121601_0081_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121603_0082_D.JPG"><img src="./2026-sebu/DJI_20260227121603_0082_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121604_0083_D.JPG"><img src="./2026-sebu/DJI_20260227121604_0083_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121605_0084_D.JPG"><img src="./2026-sebu/DJI_20260227121605_0084_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121606_0085_D.JPG"><img src="./2026-sebu/DJI_20260227121606_0085_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121607_0086_D.JPG"><img src="./2026-sebu/DJI_20260227121607_0086_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121614_0076_D.JPG"><img src="./2026-sebu/DJI_20260227121614_0076_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121615_0077_D.JPG"><img src="./2026-sebu/DJI_20260227121615_0077_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121616_0078_D.JPG"><img src="./2026-sebu/DJI_20260227121616_0078_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121617_0079_D.JPG"><img src="./2026-sebu/DJI_20260227121617_0079_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121618_0080_D.JPG"><img src="./2026-sebu/DJI_20260227121618_0080_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121619_0081_D.JPG"><img src="./2026-sebu/DJI_20260227121619_0081_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121620_0082_D.JPG"><img src="./2026-sebu/DJI_20260227121620_0082_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121620_0083_D.JPG"><img src="./2026-sebu/DJI_20260227121620_0083_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121621_0084_D.JPG"><img src="./2026-sebu/DJI_20260227121621_0084_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121622_0085_D.JPG"><img src="./2026-sebu/DJI_20260227121622_0085_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121622_0086_D.JPG"><img src="./2026-sebu/DJI_20260227121622_0086_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121623_0087_D.JPG"><img src="./2026-sebu/DJI_20260227121623_0087_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227121624_0088_D.JPG"><img src="./2026-sebu/DJI_20260227121624_0088_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122639_0092_D.JPG"><img src="./2026-sebu/DJI_20260227122639_0092_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122643_0093_D.JPG"><img src="./2026-sebu/DJI_20260227122643_0093_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122647_0094_D.JPG"><img src="./2026-sebu/DJI_20260227122647_0094_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122650_0095_D.JPG"><img src="./2026-sebu/DJI_20260227122650_0095_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122702_0096_D.JPG"><img src="./2026-sebu/DJI_20260227122702_0096_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122705_0097_D.JPG"><img src="./2026-sebu/DJI_20260227122705_0097_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227122708_0098_D.JPG"><img src="./2026-sebu/DJI_20260227122708_0098_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123124_0099_D.JPG"><img src="./2026-sebu/DJI_20260227123124_0099_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123126_0100_D.JPG"><img src="./2026-sebu/DJI_20260227123126_0100_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123127_0101_D.JPG"><img src="./2026-sebu/DJI_20260227123127_0101_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123128_0102_D.JPG"><img src="./2026-sebu/DJI_20260227123128_0102_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123140_0103_D.JPG"><img src="./2026-sebu/DJI_20260227123140_0103_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123143_0104_D.JPG"><img src="./2026-sebu/DJI_20260227123143_0104_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123143_0105_D.JPG"><img src="./2026-sebu/DJI_20260227123143_0105_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123144_0106_D.JPG"><img src="./2026-sebu/DJI_20260227123144_0106_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123154_0107_D.JPG"><img src="./2026-sebu/DJI_20260227123154_0107_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123156_0108_D.JPG"><img src="./2026-sebu/DJI_20260227123156_0108_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123157_0109_D.JPG"><img src="./2026-sebu/DJI_20260227123157_0109_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123159_0110_D.JPG"><img src="./2026-sebu/DJI_20260227123159_0110_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123201_0111_D.JPG"><img src="./2026-sebu/DJI_20260227123201_0111_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123211_0112_D.JPG"><img src="./2026-sebu/DJI_20260227123211_0112_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123213_0113_D.JPG"><img src="./2026-sebu/DJI_20260227123213_0113_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123214_0114_D.JPG"><img src="./2026-sebu/DJI_20260227123214_0114_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123215_0115_D.JPG"><img src="./2026-sebu/DJI_20260227123215_0115_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123216_0116_D.JPG"><img src="./2026-sebu/DJI_20260227123216_0116_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123229_0117_D.JPG"><img src="./2026-sebu/DJI_20260227123229_0117_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123230_0118_D.JPG"><img src="./2026-sebu/DJI_20260227123230_0118_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123232_0119_D.JPG"><img src="./2026-sebu/DJI_20260227123232_0119_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123236_0120_D.JPG"><img src="./2026-sebu/DJI_20260227123236_0120_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123237_0121_D.JPG"><img src="./2026-sebu/DJI_20260227123237_0121_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123238_0122_D.JPG"><img src="./2026-sebu/DJI_20260227123238_0122_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123241_0123_D.JPG"><img src="./2026-sebu/DJI_20260227123241_0123_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123242_0124_D.JPG"><img src="./2026-sebu/DJI_20260227123242_0124_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123243_0125_D.JPG"><img src="./2026-sebu/DJI_20260227123243_0125_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123244_0126_D.JPG"><img src="./2026-sebu/DJI_20260227123244_0126_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123446_0095_D.JPG"><img src="./2026-sebu/DJI_20260227123446_0095_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123448_0096_D.JPG"><img src="./2026-sebu/DJI_20260227123448_0096_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123452_0097_D.JPG"><img src="./2026-sebu/DJI_20260227123452_0097_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123454_0098_D.JPG"><img src="./2026-sebu/DJI_20260227123454_0098_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123503_0128_D.JPG"><img src="./2026-sebu/DJI_20260227123503_0128_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123505_0129_D.JPG"><img src="./2026-sebu/DJI_20260227123505_0129_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123506_0130_D.JPG"><img src="./2026-sebu/DJI_20260227123506_0130_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123507_0131_D.JPG"><img src="./2026-sebu/DJI_20260227123507_0131_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123636_0099_D.JPG"><img src="./2026-sebu/DJI_20260227123636_0099_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123706_0100_D.JPG"><img src="./2026-sebu/DJI_20260227123706_0100_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123739_0101_D.JPG"><img src="./2026-sebu/DJI_20260227123739_0101_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123934_0104_D.JPG"><img src="./2026-sebu/DJI_20260227123934_0104_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123936_0105_D.JPG"><img src="./2026-sebu/DJI_20260227123936_0105_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227123939_0106_D.JPG"><img src="./2026-sebu/DJI_20260227123939_0106_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227124024_0107_D.JPG"><img src="./2026-sebu/DJI_20260227124024_0107_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227124116_0109_D.JPG"><img src="./2026-sebu/DJI_20260227124116_0109_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227124130_0110_D.JPG"><img src="./2026-sebu/DJI_20260227124130_0110_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227124146_0111_D.JPG"><img src="./2026-sebu/DJI_20260227124146_0111_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130037_0142_D.JPG"><img src="./2026-sebu/DJI_20260227130037_0142_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130045_0119_D.JPG"><img src="./2026-sebu/DJI_20260227130045_0119_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130046_0143_D.JPG"><img src="./2026-sebu/DJI_20260227130046_0143_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130049_0120_D.JPG"><img src="./2026-sebu/DJI_20260227130049_0120_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130053_0121_D.JPG"><img src="./2026-sebu/DJI_20260227130053_0121_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130057_0122_D.JPG"><img src="./2026-sebu/DJI_20260227130057_0122_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130102_0144_D.JPG"><img src="./2026-sebu/DJI_20260227130102_0144_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130103_0145_D.JPG"><img src="./2026-sebu/DJI_20260227130103_0145_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130105_0146_D.JPG"><img src="./2026-sebu/DJI_20260227130105_0146_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130106_0147_D.JPG"><img src="./2026-sebu/DJI_20260227130106_0147_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130107_0148_D.JPG"><img src="./2026-sebu/DJI_20260227130107_0148_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130108_0149_D.JPG"><img src="./2026-sebu/DJI_20260227130108_0149_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130109_0150_D.JPG"><img src="./2026-sebu/DJI_20260227130109_0150_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130110_0151_D.JPG"><img src="./2026-sebu/DJI_20260227130110_0151_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130115_0152_D.JPG"><img src="./2026-sebu/DJI_20260227130115_0152_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130123_0153_D.JPG"><img src="./2026-sebu/DJI_20260227130123_0153_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130126_0154_D.JPG"><img src="./2026-sebu/DJI_20260227130126_0154_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227130340_0155_D.JPG"><img src="./2026-sebu/DJI_20260227130340_0155_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227133652_0123_D.JPG"><img src="./2026-sebu/DJI_20260227133652_0123_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227133859_0125_D.JPG"><img src="./2026-sebu/DJI_20260227133859_0125_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227133906_0126_D.JPG"><img src="./2026-sebu/DJI_20260227133906_0126_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227134109_0128_D.JPG"><img src="./2026-sebu/DJI_20260227134109_0128_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227134111_0129_D.JPG"><img src="./2026-sebu/DJI_20260227134111_0129_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227134113_0130_D.JPG"><img src="./2026-sebu/DJI_20260227134113_0130_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227134156_0131_D.JPG"><img src="./2026-sebu/DJI_20260227134156_0131_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227134414_0159_D.JPG"><img src="./2026-sebu/DJI_20260227134414_0159_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135124_0134_D.JPG"><img src="./2026-sebu/DJI_20260227135124_0134_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135132_0135_D.JPG"><img src="./2026-sebu/DJI_20260227135132_0135_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135136_0136_D.JPG"><img src="./2026-sebu/DJI_20260227135136_0136_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135137_0137_D.JPG"><img src="./2026-sebu/DJI_20260227135137_0137_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135138_0138_D.JPG"><img src="./2026-sebu/DJI_20260227135138_0138_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135139_0139_D.JPG"><img src="./2026-sebu/DJI_20260227135139_0139_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135139_0140_D.JPG"><img src="./2026-sebu/DJI_20260227135139_0140_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135141_0141_D.JPG"><img src="./2026-sebu/DJI_20260227135141_0141_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135315_0162_D.JPG"><img src="./2026-sebu/DJI_20260227135315_0162_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135317_0143_D.JPG"><img src="./2026-sebu/DJI_20260227135317_0143_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135318_0163_D.JPG"><img src="./2026-sebu/DJI_20260227135318_0163_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135320_0144_D.JPG"><img src="./2026-sebu/DJI_20260227135320_0144_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135323_0145_D.JPG"><img src="./2026-sebu/DJI_20260227135323_0145_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135340_0146_D.JPG"><img src="./2026-sebu/DJI_20260227135340_0146_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135342_0147_D.JPG"><img src="./2026-sebu/DJI_20260227135342_0147_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135348_0148_D.JPG"><img src="./2026-sebu/DJI_20260227135348_0148_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135357_0164_D.JPG"><img src="./2026-sebu/DJI_20260227135357_0164_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135459_0166_D.JPG"><img src="./2026-sebu/DJI_20260227135459_0166_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135503_0167_D.JPG"><img src="./2026-sebu/DJI_20260227135503_0167_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135843_0150_D.JPG"><img src="./2026-sebu/DJI_20260227135843_0150_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135912_0169_D.JPG"><img src="./2026-sebu/DJI_20260227135912_0169_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135914_0170_D.JPG"><img src="./2026-sebu/DJI_20260227135914_0170_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135926_0171_D.JPG"><img src="./2026-sebu/DJI_20260227135926_0171_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227135927_0172_D.JPG"><img src="./2026-sebu/DJI_20260227135927_0172_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140342_0180_D.JPG"><img src="./2026-sebu/DJI_20260227140342_0180_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140344_0181_D.JPG"><img src="./2026-sebu/DJI_20260227140344_0181_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140619_0182_D.JPG"><img src="./2026-sebu/DJI_20260227140619_0182_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140835_0184_D.JPG"><img src="./2026-sebu/DJI_20260227140835_0184_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140935_0185_D.JPG"><img src="./2026-sebu/DJI_20260227140935_0185_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140939_0186_D.JPG"><img src="./2026-sebu/DJI_20260227140939_0186_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140944_0187_D.JPG"><img src="./2026-sebu/DJI_20260227140944_0187_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140950_0188_D.JPG"><img src="./2026-sebu/DJI_20260227140950_0188_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140956_0189_D.JPG"><img src="./2026-sebu/DJI_20260227140956_0189_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227140959_0190_D.JPG"><img src="./2026-sebu/DJI_20260227140959_0190_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141002_0191_D.JPG"><img src="./2026-sebu/DJI_20260227141002_0191_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141005_0192_D.JPG"><img src="./2026-sebu/DJI_20260227141005_0192_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141150_0194_D.JPG"><img src="./2026-sebu/DJI_20260227141150_0194_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141151_0195_D.JPG"><img src="./2026-sebu/DJI_20260227141151_0195_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141152_0196_D.JPG"><img src="./2026-sebu/DJI_20260227141152_0196_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141205_0197_D.JPG"><img src="./2026-sebu/DJI_20260227141205_0197_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141206_0198_D.JPG"><img src="./2026-sebu/DJI_20260227141206_0198_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141207_0199_D.JPG"><img src="./2026-sebu/DJI_20260227141207_0199_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141208_0200_D.JPG"><img src="./2026-sebu/DJI_20260227141208_0200_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141209_0201_D.JPG"><img src="./2026-sebu/DJI_20260227141209_0201_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141210_0202_D.JPG"><img src="./2026-sebu/DJI_20260227141210_0202_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227141211_0203_D.JPG"><img src="./2026-sebu/DJI_20260227141211_0203_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142318_0159_D.JPG"><img src="./2026-sebu/DJI_20260227142318_0159_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142319_0160_D.JPG"><img src="./2026-sebu/DJI_20260227142319_0160_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142320_0161_D.JPG"><img src="./2026-sebu/DJI_20260227142320_0161_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142322_0162_D.JPG"><img src="./2026-sebu/DJI_20260227142322_0162_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142336_0163_D.JPG"><img src="./2026-sebu/DJI_20260227142336_0163_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142337_0164_D.JPG"><img src="./2026-sebu/DJI_20260227142337_0164_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142339_0165_D.JPG"><img src="./2026-sebu/DJI_20260227142339_0165_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142340_0166_D.JPG"><img src="./2026-sebu/DJI_20260227142340_0166_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142342_0167_D.JPG"><img src="./2026-sebu/DJI_20260227142342_0167_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142346_0168_D.JPG"><img src="./2026-sebu/DJI_20260227142346_0168_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142356_0169_D.JPG"><img src="./2026-sebu/DJI_20260227142356_0169_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142357_0170_D.JPG"><img src="./2026-sebu/DJI_20260227142357_0170_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142359_0171_D.JPG"><img src="./2026-sebu/DJI_20260227142359_0171_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142400_0172_D.JPG"><img src="./2026-sebu/DJI_20260227142400_0172_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142403_0173_D.JPG"><img src="./2026-sebu/DJI_20260227142403_0173_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142407_0174_D.JPG"><img src="./2026-sebu/DJI_20260227142407_0174_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142427_0208_D.JPG"><img src="./2026-sebu/DJI_20260227142427_0208_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142429_0209_D.JPG"><img src="./2026-sebu/DJI_20260227142429_0209_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142436_0175_D.JPG"><img src="./2026-sebu/DJI_20260227142436_0175_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142438_0176_D.JPG"><img src="./2026-sebu/DJI_20260227142438_0176_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142439_0177_D.JPG"><img src="./2026-sebu/DJI_20260227142439_0177_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142444_0178_D.JPG"><img src="./2026-sebu/DJI_20260227142444_0178_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142448_0179_D.JPG"><img src="./2026-sebu/DJI_20260227142448_0179_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142506_0180_D.JPG"><img src="./2026-sebu/DJI_20260227142506_0180_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142508_0181_D.JPG"><img src="./2026-sebu/DJI_20260227142508_0181_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142510_0182_D.JPG"><img src="./2026-sebu/DJI_20260227142510_0182_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142512_0183_D.JPG"><img src="./2026-sebu/DJI_20260227142512_0183_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142518_0184_D.JPG"><img src="./2026-sebu/DJI_20260227142518_0184_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142520_0185_D.JPG"><img src="./2026-sebu/DJI_20260227142520_0185_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142521_0186_D.JPG"><img src="./2026-sebu/DJI_20260227142521_0186_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142522_0187_D.JPG"><img src="./2026-sebu/DJI_20260227142522_0187_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142523_0188_D.JPG"><img src="./2026-sebu/DJI_20260227142523_0188_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142533_0189_D.JPG"><img src="./2026-sebu/DJI_20260227142533_0189_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142535_0190_D.JPG"><img src="./2026-sebu/DJI_20260227142535_0190_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142536_0191_D.JPG"><img src="./2026-sebu/DJI_20260227142536_0191_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142537_0192_D.JPG"><img src="./2026-sebu/DJI_20260227142537_0192_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142538_0193_D.JPG"><img src="./2026-sebu/DJI_20260227142538_0193_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142542_0194_D.JPG"><img src="./2026-sebu/DJI_20260227142542_0194_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142546_0195_D.JPG"><img src="./2026-sebu/DJI_20260227142546_0195_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142603_0196_D.JPG"><img src="./2026-sebu/DJI_20260227142603_0196_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142605_0197_D.JPG"><img src="./2026-sebu/DJI_20260227142605_0197_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142606_0198_D.JPG"><img src="./2026-sebu/DJI_20260227142606_0198_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142608_0199_D.JPG"><img src="./2026-sebu/DJI_20260227142608_0199_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142609_0200_D.JPG"><img src="./2026-sebu/DJI_20260227142609_0200_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142611_0201_D.JPG"><img src="./2026-sebu/DJI_20260227142611_0201_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142613_0202_D.JPG"><img src="./2026-sebu/DJI_20260227142613_0202_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142615_0203_D.JPG"><img src="./2026-sebu/DJI_20260227142615_0203_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227142616_0204_D.JPG"><img src="./2026-sebu/DJI_20260227142616_0204_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143802_0212_D.JPG"><img src="./2026-sebu/DJI_20260227143802_0212_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143804_0213_D.JPG"><img src="./2026-sebu/DJI_20260227143804_0213_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143806_0214_D.JPG"><img src="./2026-sebu/DJI_20260227143806_0214_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143824_0215_D.JPG"><img src="./2026-sebu/DJI_20260227143824_0215_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143831_0216_D.JPG"><img src="./2026-sebu/DJI_20260227143831_0216_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143838_0217_D.JPG"><img src="./2026-sebu/DJI_20260227143838_0217_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143847_0218_D.JPG"><img src="./2026-sebu/DJI_20260227143847_0218_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143852_0219_D.JPG"><img src="./2026-sebu/DJI_20260227143852_0219_D.JPG" loading="lazy"/></a>
+<a href="./2026-sebu/DJI_20260227143854_0220_D.JPG"><img src="./2026-sebu/DJI_20260227143854_0220_D.JPG"" loading=lazy/></a>
+
+
+
+
+
+<!-- 이하 동일 패턴 -->
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+
+<script>
+lightGallery(document.getElementById('gallery'), {
+    speed: 300,
+    download: true,
+    zoom: true
+});
+</script>
 
 </body>
 </html>
