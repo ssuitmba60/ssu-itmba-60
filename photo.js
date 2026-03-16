@@ -2,8 +2,13 @@ const gallery = document.getElementById("gallery");
 const images = gallery.querySelectorAll("img");
 
 let loaded = 0;
-const showAfter = Math.max(5, images.length * 0.3);
-// 최소 5장 또는 전체의 30%
+const total = images.length;
+const percent = Math.floor((loaded / total) * 100);
+const loadingCount = document.getElementById("loading-count");
+//loadingCount.textContent = `0 / ${total}`;
+loadingCount.textContent = `${loaded} / ${total} (${percent}%)`;
+
+const showAfter = Math.max(5, total * 0.3);
 
 images.forEach(img => {
     const temp = new Image();
@@ -12,15 +17,12 @@ images.forEach(img => {
     temp.onload = () => {
         loaded++;
 
+        // 로딩 숫자 표시
+        loadingCount.textContent = `${loaded} / ${total}`;
+
         if (loaded >= showAfter) {
             document.getElementById("loading").style.display = "none";
             gallery.style.display = "grid";
         }
     }
-});
-
-lightGallery(gallery, {
-    speed: 300,
-    download: true,
-    zoom: true
 });
