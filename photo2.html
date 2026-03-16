@@ -52,18 +52,17 @@
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
 
 <script>
-
     const gallery = document.getElementById("gallery");
 
     const folder = "./2026-sebu/";
-    const prefix = "DJI_20260227";
-    const total = 500; // 사진 개수
+    const prefix = "sebu_";
+    const total = 583; // 사진 개수
 
     for(let i=1;i<=total;i++){
 
-        const num = String(i).padStart(4,"0");
+        const num = String(i).padStart(5,"0");
 
-        const file = folder + prefix + num + ".JPG";
+        const file = folder + prefix + num + ".jpg";
 
         const a = document.createElement("a");
         a.href = file;
