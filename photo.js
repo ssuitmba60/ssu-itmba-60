@@ -1,52 +1,30 @@
 const gallery = document.getElementById("gallery");
-const images = Array.from(gallery.querySelectorAll("img"));
 
-let loaded = 0;
-const total = images.length;
+const folder = "./2026-sebu/";
+const prefix = "sebu_";
+const total = 583; // 사진 개수
 
-const loadingCount = document.getElementById("loading-count");
-loadingCount.textContent = `0 / ${total}`;
+for (let i = 1; i <= total; i++) {
 
-const showAfter = Math.max(5, total * 0.3);
+    const num = String(i).padStart(5, "0");
 
-// 동시에 로딩할 개수
-const CONCURRENT = 10;
+    const file = folder + prefix + num + ".jpg";
 
-let index = 0;
+    const a = document.createElement("a");
+    a.href = file;
 
-function loadNext() {
+    const img = document.createElement("img");
+    img.loading = "lazy";
+    img.src = file;
 
-    if (index >= total) return;
-
-    const img = images[index];
-    const temp = new Image();
-
-    temp.src = img.src;
-
-    temp.onload = () => {
-
-        loaded++;
-
-        const percent = Math.floor((loaded / total) * 100);
-        loadingCount.textContent = `${loaded} / ${total} (${percent}%)`;
-
-        if (loaded >= showAfter) {
-            document.getElementById("loading").style.display = "none";
-            gallery.style.display = "grid";
-        }
-
-        loadNext();
-    };
-
-    index++;
+    a.appendChild(img);
+    gallery.appendChild(a);
 }
 
-// 최초 병렬 로딩 시작
-for (let i = 0; i < CONCURRENT; i++) {
-    loadNext();
-}
+document.getElementById("loading").style.display = "none";
 
 lightGallery(gallery, {
+    selector: 'a',
     speed: 300,
     download: true,
     zoom: true
